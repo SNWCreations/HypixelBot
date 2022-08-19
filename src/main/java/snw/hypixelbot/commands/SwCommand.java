@@ -34,6 +34,7 @@ public class SwCommand implements UserCommandExecutor {
 
             String name = player.getName();
             JsonObject swStat = player.getRaw().getAsJsonObject("stats").getAsJsonObject("SkyWars");
+            int souls = swStat.get("souls").getAsInt();
             int coins = swStat.get("coins").getAsInt();
             int fails = swStat.get("losses").getAsInt();
             int winstreak = swStat.get("win_streak").getAsInt();
@@ -51,11 +52,12 @@ public class SwCommand implements UserCommandExecutor {
                                     new PlainTextElement(
                                             String.format(
                                                     "硬币: %s\n" +
+                                                            "灵魂: %s\n" +
                                                             "当前连胜: %s\n" +
                                                             "方块放置数: %s\n" +
                                                             "失败: %s\n" +
                                                             "死亡: %s",
-                                                    coins, winstreak, blocks_placed, fails, deaths
+                                                    coins, souls, winstreak, blocks_placed, fails, deaths
                                             ), false
                                     ), null, null
                             )
