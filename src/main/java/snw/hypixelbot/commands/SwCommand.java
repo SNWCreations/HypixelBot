@@ -23,7 +23,7 @@ public class SwCommand implements UserCommandExecutor {
     public void onCommand(User sender, String[] arguments, Message message) {
         if (message == null) return;
         if (arguments.length == 0) {
-            reply(sender, message, "您没有提供参数！用法: /bw <玩家名>");
+            reply(sender, message, "您没有提供参数！用法: /sw <玩家名>");
         } else {
             HypixelAPI hypixelAPI = Main.getInstance().getHypixelAPI();
             String target = arguments[0];
