@@ -1,5 +1,5 @@
-name: ExampleBot
+name: HypixelBot
 version: 0.1.0
 api-version: 0.33.0
 authors: ["SNWCreations"]
-main: snw.jkook.example.Main
+main: snw.hypixelbot.Main
