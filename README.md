@@ -6,7 +6,7 @@
 
 ## 自行部署？
 
-到 [KookBC](https://github.com/SNWCreations/KookBC) 仓库下载 KookBC **0.17** ，并完成 KookBC 的配置（如设置 ）。
+到 [KookBC](https://github.com/SNWCreations/KookBC) 仓库下载 KookBC **0.17** ，并完成 KookBC 的配置（如设置机器人 Token）。
 
 然后[下载此插件](https://ghproxy.com/?q=https://github.com/SNWCreations/HypixelBot/releases/download/1.0.1/hypixelbot-1.0.1.jar)，并按照 KookBC 仓库的 README 安装插件。
 
